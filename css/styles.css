@@ -17,7 +17,7 @@
   --link-padding-tp: 32px;
   --link-padding-bt: 32px;
   --color-icon-clients: #afb1b8;
-  --transition-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-time-cubic: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -83,9 +83,14 @@ img {
   letter-spacing: 0.03em;
   color: var(--black-color);
   margin-right: 93px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  animation-duration: 2000ms;
+}
+
+.logo.link.animate__rubberBand {
   padding-top: 24px;
   padding-bottom: 25px;
-  animation-duration: 2000ms;
 }
 
 .part-logo {
@@ -256,7 +261,8 @@ img {
   border: none;
   color: var(--white-color);
 
-  transition: background-color var(--transition-time-cubic);
+  transition: background-color var(--transition-time-cubic),
+    box-shadow var(--transition-time-cubic);
 }
 
 .modal-btn:hover,
@@ -725,3 +731,59 @@ img {
   color: var(--content-description);
 }
 /* ========= END OUR WORKS =========*/
+
+/* ========= MODAL BTNs & BACKDROPs =========*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: visibility var(--transition-time-cubic),
+    opacity var(--transition-time-cubic),
+    pointer-events var(--transition-time-cubic);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -35%) rotate(180deg) scale(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+
+  transition: transform var(--transition-time-cubic),
+    rotate var(--transition-time-cubic), scale var(--transition-time-cubic);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ========= END MODAL BTNs & BACKDROPs =========*/
