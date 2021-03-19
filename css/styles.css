@@ -18,6 +18,7 @@
   --link-padding-bt: 32px;
   --color-icon-clients: #afb1b8;
   --transition-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-time-cubic-modal: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -83,8 +84,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--black-color);
   margin-right: 93px;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
   animation-duration: 2000ms;
 }
 
@@ -743,9 +742,9 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: visibility var(--transition-time-cubic),
-    opacity var(--transition-time-cubic),
-    pointer-events var(--transition-time-cubic);
+  transition: visibility var(--transition-time-cubic-modal),
+    opacity var(--transition-time-cubic-modal),
+    pointer-events var(--transition-time-cubic-modal);
 }
 
 .is-hidden {
@@ -767,8 +766,7 @@ img {
   height: 581px;
   background-color: var(--white-color);
 
-  transition: transform var(--transition-time-cubic),
-    rotate var(--transition-time-cubic), scale var(--transition-time-cubic);
+  transition: transform var(--transition-time-cubic-modal);
 }
 
 .modal-close-btn {
