@@ -143,8 +143,6 @@ img {
 /* ========= HEADER =========*/
 .main-header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
-  
 }
 
 .main-header .container {
@@ -202,7 +200,7 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  top: 76px;
+  top: 78px;
 }
 
 .channel-link {
@@ -406,7 +404,6 @@ img {
   padding: 27px 82px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-
 
 /* ========= END WHAT WE DO =========*/
 
@@ -641,8 +638,8 @@ img {
   background: var(--background);
   padding: var(--filters-btn-pd);
 
-  transition: background-color var(--transition-time-cubic), 
-  color var(--transition-time-cubic), box-shadow var(--transition-time-cubic);
+  transition: background-color var(--transition-time-cubic),
+    color var(--transition-time-cubic), box-shadow var(--transition-time-cubic);
 }
 
 .filter-works-btn:hover,
