@@ -19,7 +19,7 @@
     <header class="main-header">
         <div class="container">
             <nav class="navigation">
-                <a class="logo link animate__rubberBand" href="./index.html" lang="en"><span class="part-logo animate__flip">Web</span>Studio</a>
+                <a class="logo link animate__rubberBand" href="./index.html" lang="en"><span class="part-logo">Web</span>Studio</a>
                 <ul class="navigation-list list">
                     <li class="navigation-item">
                         <a class="navigation-link link current" href="./index.html">Студия</a>
@@ -55,7 +55,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="modal-btn" type="button">Заказать услугу</button>
+            <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- ADVANTAGES -->
@@ -410,6 +410,18 @@
             </div>
         </div>
     </footer>
+<!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button" data-modal-close>
+                <svg width="30" height="30" class="modal-close-btn-icon">
+                    <use href="./images/sprite.svg#icon-close-black-btn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
