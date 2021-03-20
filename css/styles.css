@@ -399,6 +399,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   left: 0px;
   bottom: 0px;
   font-weight: 700;
