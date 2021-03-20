@@ -396,6 +396,9 @@ img {
 
 .work-list-img-title {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0px;
   bottom: 0px;
   font-weight: 700;
@@ -407,7 +410,7 @@ img {
   color: var(--white-color);
   width: 370px;
   height: 70px;
-  padding: 27px 82px;
+  /* padding: 27px 82px; */
   background-color: rgba(47, 48, 58, 0.8);
 }
 
