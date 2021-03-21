@@ -18,7 +18,7 @@
   --link-padding-bt: 32px;
   --color-icon-clients: #afb1b8;
   --transition-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-time-cubic-modal: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-time-cubic-modal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -411,7 +411,6 @@ img {
   color: var(--white-color);
   width: 370px;
   height: 70px;
-  /* padding: 27px 82px; */
   background-color: rgba(47, 48, 58, 0.8);
 }
 
